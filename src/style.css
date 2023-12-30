@@ -2,68 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: yekan;
+  src: url("./../public/font/Gandom.ttf");
+}
+
 body {
-    background-color: black;
+  direction: rtl;
+  font-family: yekan;
+  box-sizing: border-box;
 }
 
-.header {
-    background: rgba(171, 191, 218, 0.5);
+.menu{
+  background-image: url("./../public/images/1.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.651);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
 }
-
-.main-picture {
-    background-image: url("../public/images/Top\ Picture.jpg");
-    background-color: rgba(0, 0, 0, 0.486);
-}
-
-.img-focus-box2 {
-    background-image: url("../public/images/S-Cooperation.jpg");
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 10px 90px 10px 90px;
-}
-
-.img-focus-box2:hover {
-    background-color: rgba(0, 0, 0, 0.527);
-    transform: rotate(2deg);
-}
-
-.img-focus-box1 {
-    background-image: url("../public/images/home.jpg");
-    border-radius: 10px 90px 10px 90px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.img-focus-box1:hover {
-    background-color: rgba(0, 0, 0, 0.527);
-    transform: rotate(2deg);
-}
-
-.img-focus-box1:hover .text-img-focus {
-    opacity: 1;
-}
-
-.img-focus-box2:hover .text-img-focus {
-    opacity: 1;
-}
-
-.text-img-focus {
-    bottom: -20px;
-}
-
-.closing-costs {
-    height: 40vh;
-    transform: skewY(5deg);
-}
-
-.text-closing-costs {
-    transform: skewY(-5deg);
-}
-
-.footer {
-    background-image: url("../public/images/Footer\ image.jpg");
-    background-position: 0 10%;
-    background-color: rgba(0, 0, 0, 0.712);
-}
-
-.bg-dark {
-    background-color: rgba(0, 0, 0, 0.514);
+.box-menu{
+  background-color: rgba(255, 255, 255, 0.884);
+  
 }
